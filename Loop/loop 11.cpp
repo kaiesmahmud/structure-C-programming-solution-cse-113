@@ -2,16 +2,16 @@
 
 #include<stdio.h>
 int main(){
-    int n ,sum = 1 ;
+    int n ,multi = 1 ;
 
     scanf("%d",&n);
 
-    for( ; n >= 1 ;)
+    while( n >= 1 )
     {
-        sum *=(n % 10) ;
+        multi *=(n % 10) ;
         n /=10;
     }
-    printf(" %d ",sum );
+    printf(" %d ",multi );
 
     return 0 ;
 }
